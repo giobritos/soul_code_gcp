@@ -405,3 +405,17 @@ Notes: Passo a passo de todos os serviços vistos da GCP até a presente data. F
         
     
     Para usar usar o Jupyter no cluster, clicar no cluster e ir em Web Interfaces
+    
+
+### Dataflow GCP
+
+- Criando um Dataflow
+    - Jobs
+    - Create Jobs
+    - Name (único no projeto)
+    - Regional (usar a mesma configuração do colab)
+    - Template: custom template - escolhe o bucket - escolhe a pasta models - seleciona o modelo
+    - Required parameters: escolhe o bucket - escolhe a pasta temp
+    - Encryption: google managed
+    - Dataflow prime: não habilitar
+    - Run Job
