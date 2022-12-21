@@ -1,6 +1,5 @@
 # Passo a Passo - GCP
 
-Date: November 1, 2022
 Notes: Passo a passo de todos os serviços vistos da GCP até a presente data. Feito por Giovana de Brito Silva.
 
 ### **Criação de VPC**
