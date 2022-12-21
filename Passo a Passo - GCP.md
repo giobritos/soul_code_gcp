@@ -419,3 +419,24 @@ Notes: Passo a passo de todos os serviços vistos da GCP até a presente data. F
     - Encryption: google managed
     - Dataflow prime: não habilitar
     - Run Job
+
+### BigQuery
+
+- Criando Dataset
+    - BigQuery
+    - Três pontinhos do projeto
+    - Create Dataset
+    - DatasetID (único no projeto e relacionado aos dados)
+    - Escolher data location (a mesma do seu bucket)
+    - Setar data expiration para não esquecer de excluí-las depois
+    - Advanced options (default)
+    - Create dataset
+- Criando Table
+    - Três pontinhos do dataset
+    - Create table
+    - Source - create table from: GCS - selecionar arquivo a ser usado no bucket - file format: conforme seleciona o arquivo ele muda automaticamente
+    - Destination - project: seu projeto - dataset: o dataset criado - nomear table - table type: native
+    - Schema: Auto detect
+    - Partition and cluster settings: particiona dados para melhorar tempo e preço (mas não iremos particionar)
+    - Advanced options - Write preference: default - Number of errors allowed: default - Field delimiter: nesse caso foi customizado (:) - habilitar quoted newlines - Header rows to skip: default (0) - Encryption: Google-managed - Default Collation: default
+    - Create table (verificar sempre se a dataset está na mesma localização de seu bucket, se não da erro)
